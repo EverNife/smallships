@@ -131,13 +131,13 @@ public class ShipContainerScreen extends AbstractContainerScreen<ShipContainerMe
         int gap = 14;
         guiGraphics.pose().pushPose();
         guiGraphics.pose().scale(0.7F, 0.7F, 1F);
-        String attachment = this.containerShip instanceof Shieldable ? "Shields:" : "Cannons:";
+        String attachment = this.containerShip instanceof Shieldable ? "Escudos:" : "Canhões:";
 
-        guiGraphics.drawString(font, "Name:", leftPos, topPos + gap * 0, FONT_COLOR, false);
-        guiGraphics.drawString(font, "Type:", leftPos, topPos + gap * 1, FONT_COLOR, false);
-        guiGraphics.drawString(font, "Crew:", leftPos, topPos + gap * 2, FONT_COLOR, false);
-        guiGraphics.drawString(font, "Speed " + unit + ":", leftPos, topPos + gap * 3, FONT_COLOR, false);
-        guiGraphics.drawString(font, "Damage:", leftPos, topPos + gap * 4, FONT_COLOR, false);
+        guiGraphics.drawString(font, "Nome:", leftPos, topPos + gap * 0, FONT_COLOR, false);
+        guiGraphics.drawString(font, "Tipo:", leftPos, topPos + gap * 1, FONT_COLOR, false);
+        guiGraphics.drawString(font, "Trip:", leftPos, topPos + gap * 2, FONT_COLOR, false);
+        guiGraphics.drawString(font, "Velocidade:", leftPos, topPos + gap * 3, FONT_COLOR, false);
+        guiGraphics.drawString(font, "Danos:", leftPos, topPos + gap * 4, FONT_COLOR, false);
         guiGraphics.drawString(font, attachment, leftPos, topPos + gap * 5, FONT_COLOR, false);
 
         guiGraphics.drawString(font, name, leftPos2, topPos + gap * 0, FONT_COLOR, false);
